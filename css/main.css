@@ -1,0 +1,196 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Roboto;
+  font-size: 12px;
+  color: #424242;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  height: 96px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+
+.header__logo {
+  height: 80px;
+  vertical-align: top;
+  margin:0.5em;
+  float: left;
+}
+.header__title{
+  margin-top: 0.5em;
+  margin-right: 1em;
+  display: inline-block;
+  color: #2d3c49;
+  vertical-align: top;
+}
+.header__h1 {
+  font-weight: 300;
+  font-size: 4em;
+}
+.header__h2 {
+  font-size: 1.5em;
+}
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ *
+ * Hero
+ *
+ */
+
+.hero {
+  width: 100%;
+  position: relative;
+}
+
+.hero article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  height: 40%;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+
+
+/*
+  work
+*/
+
+article{
+  margin-bottom: 30px;
+  /*box-shadow: 0px 1px 0px 0px rgba(1, 0, 0, 0.26);*/
+}
+
+.work {
+  
+} 
+  
+.work_title {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-left: 10px;
+  color: #7d97ad;
+}
+
+.work_img {
+  clear: both;
+  display: block;
+  margin:auto;
+  height: 100%;
+  width: 100%;
+}
+
+.work_item {
+  text-align: center;
+} 
+
+.work_item_title {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: -10px;
+}
+
+footer {
+  border-top: 1px solid #E0E0E0;
+  padding: 1em;
+  width: 100%;
+}
+
+footer li {
+  display: inline-block;
+  margin: 0 1em;
+}
+
+footer a {
+  text-decoration: none;
+  color: #333;
+  padding: 1.5em;
+}
+
+@media (max-width: 600px) {
+  .work_img {
+    clear: both;
+    display: block;
+    margin:auto;
+    height: 60%;
+    width: 60%;
+  }
+
+  .work_title{
+    text-align: center;
+  }
+}
+
+@media  screen and (min-width: 601px) and (max-width: 800px) {
+  .work_img {
+    clear: both;
+    display: block;
+    margin:auto;
+    height: 80%;
+    width: 80%;
+  }
+
+  .work_title{
+    font-size: 3em;
+    text-align: center;
+  }
+
+  .work_item{
+    font-size: 1.5em;
+  }
+}
